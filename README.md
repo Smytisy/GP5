@@ -21,5 +21,5 @@
 
 ### Логи и датасеты:
 Логи моделей хранятся в сервисе wandb: https://wandb.ai/snigirev576-hse/gp5-project?nw=nwusersnigirev576 
-Датасет с табличными данными: https://www.kaggle.com/datasets/essienmary/pneumonia-dataset
+Датасет с табличными данными: https://www.kaggle.com/datasets/essienmary/pneumonia-dataset        
 Датасет с рентгеновскими снимками: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia 
