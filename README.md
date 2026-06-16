@@ -15,11 +15,29 @@
 ### Связь задач
 Первая задача используется для **первичного скрининга**, вторая - **после прохождения рентгена**. В совокупности они образуют полный цикл выявления пневмонии.
 
+Схема бизнес-процесса: [docs/path_diagram.png](docs/path_diagram.png)
+
 ## Обоснование
 
 В период сезонных заболеваний в поликлиники обращается множество пациентов с признаками респираторных заболеваний. Для быстрого выявления тяжёлого заболевания — пневмонии — необходима автоматизация этого процесса.
 
-### Логи и датасеты:
-Логи моделей хранятся в сервисе wandb: https://wandb.ai/snigirev576-hse/gp5-project?nw=nwusersnigirev576         
-Датасет с табличными данными: https://www.kaggle.com/datasets/essienmary/pneumonia-dataset        
-Датасет с рентгеновскими снимками: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia 
+### Логи и датасеты
+
+Логи моделей хранятся в сервисе wandb: https://wandb.ai/snigirev576-hse/gp5-project  
+Датасет с табличными данными: https://www.kaggle.com/datasets/essienmary/pneumonia-dataset  
+Датасет с рентгеновскими снимками: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+
+Как положить данные локально — см. [data/README.md](data/README.md).
+
+## Структура репозитория
+
+```
+GP5/
+├── docs/                  # схемы
+├── notebooks/
+│   ├── assignment/        # условие проекта
+│   ├── tabular/           # задача 1, MLP
+│   └── images/            # задача 2, CNN
+├── data/                  # датасеты (не в git)
+└── models/                # веса моделей (не в git, логируем в wandb)
+```
